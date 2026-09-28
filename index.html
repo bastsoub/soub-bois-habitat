@@ -3,12 +3,301 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>SOUB BOIS & HABITAT</title>
+    <meta name="description" content="SOUB BOIS & HABITAT - Charpente, couverture et construction bois à La Grand-Croix dans la Loire.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #111111;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: min(92%, 760px);
+            margin: auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 65px 20px 40px;
+        }
+
+        .logo-symbol {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: clamp(30px, 8vw, 48px);
+            letter-spacing: 2px;
+            line-height: 1.1;
+        }
+
+        .bois {
+            color: #b88752;
+        }
+
+        .habitat {
+            margin-top: 7px;
+            color: #b88752;
+            font-size: 18px;
+            letter-spacing: 5px;
+        }
+
+        .name {
+            margin-top: 28px;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .job {
+            color: #c6c6c6;
+            margin-top: 3px;
+        }
+
+        .location {
+            color: #9d9d9d;
+            margin-top: 7px;
+            font-size: 14px;
+        }
+
+        .buttons {
+            display: grid;
+            gap: 12px;
+            margin: 15px 0 50px;
+        }
+
+        .button {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            background: #b88752;
+            color: #111;
+            padding: 16px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            background: #ca9a64;
+        }
+
+        .button.secondary {
+            background: transparent;
+            color: #f5f5f5;
+            border: 1px solid #555;
+        }
+
+        section {
+            margin-bottom: 55px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 22px;
+            letter-spacing: 2px;
+        }
+
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 45px;
+            height: 2px;
+            background: #b88752;
+            margin: 10px auto;
+        }
+
+        .services {
+            display: grid;
+            gap: 14px;
+        }
+
+        .service {
+            background: #191919;
+            border: 1px solid #292929;
+            padding: 22px;
+            border-radius: 8px;
+        }
+
+        .service h3 {
+            color: #b88752;
+            margin-bottom: 5px;
+        }
+
+        .service p {
+            color: #bdbdbd;
+            font-size: 14px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #191919;
+            border-radius: 10px;
+            padding: 30px 20px;
+        }
+
+        .contact p {
+            margin: 7px 0;
+        }
+
+        .contact a {
+            color: #b88752;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 15px 45px;
+            color: #777;
+            font-size: 12px;
+        }
+
+        @media (min-width: 600px) {
+            .services {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>SOUB BOIS & HABITAT</h1>
-    <h2>Bastien Soubeyrand</h2>
-    <p>Charpente • Couverture • Construction bois</p>
+
+<header class="container">
+
+    <div class="logo-symbol">⌂</div>
+
+    <h1>
+        SOUB <span class="bois">BOIS</span>
+    </h1>
+
+    <div class="habitat">& HABITAT</div>
+
+    <div class="name">Bastien Soubeyrand</div>
+    <div class="job">Artisan charpentier</div>
+
+    <div class="location">
+        📍 La Grand-Croix • Loire
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <div class="buttons">
+
+        <a class="button" href="tel:+33687999296">
+            📞 APPELER
+        </a>
+
+        <a class="button secondary"
+           href="mailto:soub.bois.habitat@hotmail.com">
+            ✉️ ENVOYER UN E-MAIL
+        </a>
+
+        <a class="button secondary"
+           href="mailto:soub.bois.habitat@hotmail.com?subject=Demande%20de%20devis%20-%20SOUB%20BOIS%20%26%20HABITAT">
+            📋 DEMANDER UN DEVIS
+        </a>
+
+    </div>
+
+
+    <section>
+
+        <h2 class="section-title">
+            MES ACTIVITÉS
+        </h2>
+
+        <div class="services">
+
+            <div class="service">
+                <h3>CHARPENTE</h3>
+                <p>
+                    Fabrication, pose, rénovation
+                    et travaux de charpente bois.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>COUVERTURE</h3>
+                <p>
+                    Pose, rénovation et travaux
+                    de couverture.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>CONSTRUCTION BOIS</h3>
+                <p>
+                    Structures et ouvrages
+                    en construction bois.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>SOUS-TRAITANCE</h3>
+                <p>
+                    Intervention auprès des entreprises
+                    et professionnels du bâtiment.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2 class="section-title">
+            CONTACT
+        </h2>
+
+        <div class="contact">
+
+            <strong>SOUB BOIS & HABITAT</strong>
+
+            <p>Bastien Soubeyrand</p>
+
+            <p>
+                📞
+                <a href="tel:+33687999296">
+                    06 87 99 92 96
+                </a>
+            </p>
+
+            <p>
+                ✉️
+                <a href="mailto:soub.bois.habitat@hotmail.com">
+                    soub.bois.habitat@hotmail.com
+                </a>
+            </p>
+
+            <p>📍 La Grand-Croix • Loire</p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    © SOUB BOIS & HABITAT
+</footer>
+
 </body>
 </html>
