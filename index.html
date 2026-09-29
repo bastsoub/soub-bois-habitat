@@ -10,7 +10,6 @@
           content="SOUB BOIS & HABITAT - Charpente, couverture, construction bois et pose de menuiseries extérieures à La Grand-Croix dans la Loire.">
 
     <style>
-
         * {
             box-sizing: border-box;
             margin: 0;
@@ -29,11 +28,6 @@
             margin: auto;
         }
 
-
-        /* =========================
-           LOGO
-        ========================= */
-
         header {
             text-align: center;
             padding: 30px 20px 15px;
@@ -46,11 +40,6 @@
             margin: 0 auto;
         }
 
-
-        /* =========================
-           BOUTONS
-        ========================= */
-
         .buttons {
             display: grid;
             gap: 12px;
@@ -61,15 +50,11 @@
             display: block;
             text-decoration: none;
             text-align: center;
-
             background: #b88752;
             color: #111111;
-
             padding: 16px;
             border-radius: 8px;
-
             font-weight: bold;
-
             transition: 0.2s;
         }
 
@@ -84,11 +69,6 @@
             border: 1px solid #555555;
         }
 
-
-        /* =========================
-           SECTIONS
-        ========================= */
-
         section {
             margin-bottom: 55px;
         }
@@ -96,28 +76,18 @@
         .section-title {
             text-align: center;
             margin-bottom: 25px;
-
             font-size: 22px;
             letter-spacing: 2px;
         }
 
         .section-title::after {
             content: "";
-
             display: block;
-
             width: 45px;
             height: 2px;
-
             background: #b88752;
-
             margin: 10px auto;
         }
-
-
-        /* =========================
-           ACTIVITÉS
-        ========================= */
 
         .services {
             display: grid;
@@ -126,18 +96,14 @@
 
         .service {
             background: #191919;
-
             border: 1px solid #292929;
             border-radius: 8px;
-
             padding: 22px;
         }
 
         .service h3 {
             color: #b88752;
-
             margin-bottom: 5px;
-
             font-size: 17px;
         }
 
@@ -146,30 +112,19 @@
             font-size: 14px;
         }
 
-
-        /* =========================
-           CONTACT
-        ========================= */
-
         .contact {
             text-align: center;
-
             background: #191919;
-
             border: 1px solid #292929;
             border-radius: 12px;
-
             padding: 32px 20px;
         }
 
         .contact-company {
             font-size: 20px;
             font-weight: bold;
-
             color: #b88752;
-
             letter-spacing: 1px;
-
             margin-bottom: 15px;
         }
 
@@ -192,58 +147,115 @@
             text-decoration: none;
         }
 
+        .contact-actions {
+            display: grid;
+            gap: 12px;
+            max-width: 400px;
+            margin: 25px auto 0;
+        }
 
-        /* Bouton fiche contact */
+        .contact-action {
+            display: block;
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            font-family: inherit;
+            cursor: pointer;
+            transition: 0.2s;
+        }
 
         .contact-save {
-            display: block;
-
-            margin: 25px auto 0;
-
-            padding: 15px 20px;
-
-            max-width: 400px;
-
             background: #b88752;
-
             color: #111111 !important;
-
+            border: 1px solid #b88752;
             text-decoration: none;
+        }
 
-            border-radius: 8px;
+        .contact-secondary {
+            background: transparent;
+            color: #f5f5f5;
+            border: 1px solid #555555;
+        }
 
-            font-weight: bold;
-
-            transition: 0.2s;
+        .contact-action:hover {
+            transform: translateY(-2px);
         }
 
         .contact-save:hover {
             background: #ca9a64;
-            transform: translateY(-2px);
         }
 
+        .contact-secondary:hover {
+            border-color: #b88752;
+        }
 
-        /* =========================
-           PIED DE PAGE
-        ========================= */
+        /* Fenêtre QR code */
+
+        .qr-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.85);
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .qr-modal.active {
+            display: flex;
+        }
+
+        .qr-box {
+            width: min(100%, 390px);
+            background: #191919;
+            border: 1px solid #444444;
+            border-radius: 14px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .qr-box h2 {
+            color: #b88752;
+            margin-bottom: 8px;
+        }
+
+        .qr-box p {
+            color: #bdbdbd;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .qr-image {
+            display: block;
+            width: min(100%, 290px);
+            height: auto;
+            margin: 0 auto 20px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .qr-close {
+            width: 100%;
+            padding: 14px;
+            background: #b88752;
+            color: #111111;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
 
         footer {
             text-align: center;
-
             padding: 15px 15px 45px;
-
             color: #777777;
-
             font-size: 12px;
         }
 
-
-        /* =========================
-           TABLETTE / ORDINATEUR
-        ========================= */
-
         @media (min-width: 600px) {
-
             .services {
                 grid-template-columns: 1fr 1fr;
             }
@@ -251,72 +263,38 @@
             header {
                 padding-top: 40px;
             }
-
         }
-
     </style>
-
 </head>
-
 
 <body>
 
-
-<!-- =========================
-     LOGO
-========================= -->
-
 <header class="container">
-
-    <img
-        src="logo-soub-bois.png.png"
-        alt="SOUB BOIS & HABITAT"
-        class="logo"
-    >
-
+    <img src="logo-soub-bois.png.png"
+         alt="SOUB BOIS & HABITAT"
+         class="logo">
 </header>
-
-
 
 <main class="container">
 
-
-    <!-- =========================
-         ACTIONS PRINCIPALES
-    ========================= -->
-
     <div class="buttons">
 
-        <a
-            class="button"
-            href="tel:+33687999296"
-        >
+        <a class="button"
+           href="tel:+33687999296">
             📞 APPELER
         </a>
 
-
-        <a
-            class="button secondary"
-            href="mailto:soub.bois.habitat@hotmail.com"
-        >
+        <a class="button secondary"
+           href="mailto:soub.bois.habitat@hotmail.com">
             ✉️ ENVOYER UN E-MAIL
         </a>
 
-
-        <a
-            class="button secondary"
-            href="mailto:soub.bois.habitat@hotmail.com?subject=Demande%20de%20devis%20-%20SOUB%20BOIS%20%26%20HABITAT"
-        >
+        <a class="button secondary"
+           href="mailto:soub.bois.habitat@hotmail.com?subject=Demande%20de%20devis%20-%20SOUB%20BOIS%20%26%20HABITAT">
             📋 DEMANDER UN DEVIS
         </a>
 
     </div>
-
-
-
-    <!-- =========================
-         ACTIVITÉS
-    ========================= -->
 
     <section>
 
@@ -324,93 +302,46 @@
             MES ACTIVITÉS
         </h2>
 
-
         <div class="services">
 
-
             <div class="service">
-
-                <h3>
-                    CHARPENTE
-                </h3>
-
+                <h3>CHARPENTE</h3>
                 <p>
-                    Fabrication, pose, rénovation
-                    et travaux de charpente bois.
+                    Fabrication, pose, rénovation et travaux de charpente bois.
                 </p>
-
             </div>
 
-
-
             <div class="service">
-
-                <h3>
-                    COUVERTURE
-                </h3>
-
+                <h3>COUVERTURE</h3>
                 <p>
-                    Pose, rénovation et travaux
-                    de couverture.
+                    Pose, rénovation et travaux de couverture.
                 </p>
-
             </div>
 
-
-
             <div class="service">
-
-                <h3>
-                    CONSTRUCTION BOIS
-                </h3>
-
+                <h3>CONSTRUCTION BOIS</h3>
                 <p>
-                    Structures et ouvrages
-                    en construction bois.
+                    Structures et ouvrages en construction bois.
                 </p>
-
             </div>
 
-
-
             <div class="service">
-
-                <h3>
-                    MENUISERIES EXTÉRIEURES
-                </h3>
-
+                <h3>MENUISERIES EXTÉRIEURES</h3>
                 <p>
-                    Pose de fenêtres, portes
-                    et menuiseries extérieures.
+                    Pose de fenêtres, portes et menuiseries extérieures.
                 </p>
-
             </div>
 
-
-
             <div class="service">
-
-                <h3>
-                    SOUS-TRAITANCE
-                </h3>
-
+                <h3>SOUS-TRAITANCE</h3>
                 <p>
-                    Intervention auprès des entreprises
-                    et professionnels du bâtiment.
+                    Intervention auprès des entreprises et professionnels du bâtiment.
                 </p>
-
             </div>
-
 
         </div>
 
     </section>
-
-
-
-    <!-- =========================
-         CONTACT
-    ========================= -->
 
     <section>
 
@@ -418,29 +349,23 @@
             CONTACT
         </h2>
 
-
         <div class="contact">
-
 
             <div class="contact-company">
                 SOUB BOIS & HABITAT
             </div>
 
-
             <div class="contact-name">
                 Bastien Soubeyrand
             </div>
-
 
             <div class="contact-job">
                 Artisan charpentier
             </div>
 
-
             <p>
                 📍 La Grand-Croix • Loire
             </p>
-
 
             <p>
                 📞
@@ -449,7 +374,6 @@
                 </a>
             </p>
 
-
             <p>
                 ✉️
                 <a href="mailto:soub.bois.habitat@hotmail.com">
@@ -457,33 +381,124 @@
                 </a>
             </p>
 
+            <div class="contact-actions">
 
-            <!-- FICHE CONTACT -->
+                <a class="contact-action contact-save"
+                   href="contact.vcf"
+                   download>
+                    📇 AJOUTER À MES CONTACTS
+                </a>
 
-            <a
-                class="contact-save"
-                href="contact.vcf"
-                download
-            >
-                📇 AJOUTER À MES CONTACTS
-            </a>
+                <button class="contact-action contact-secondary"
+                        type="button"
+                        onclick="openQR()">
+                    ▦ AFFICHER LE QR CODE
+                </button>
 
+                <button class="contact-action contact-secondary"
+                        type="button"
+                        onclick="shareSite()">
+                    ↗ PARTAGER LA PAGE
+                </button>
+
+            </div>
 
         </div>
 
     </section>
 
-
 </main>
 
 
+<!-- Fenêtre QR code -->
+
+<div class="qr-modal"
+     id="qrModal"
+     onclick="closeQRBackground(event)">
+
+    <div class="qr-box">
+
+        <h2>SOUB BOIS & HABITAT</h2>
+
+        <p>
+            Scannez ce QR code pour accéder au site
+        </p>
+
+        <img src="QR_SOUB_BOIS_HABITAT.png"
+             alt="QR code SOUB BOIS & HABITAT"
+             class="qr-image">
+
+        <button class="qr-close"
+                type="button"
+                onclick="closeQR()">
+            FERMER
+        </button>
+
+    </div>
+
+</div>
+
 
 <footer>
-
     © SOUB BOIS & HABITAT
-
 </footer>
 
+
+<script>
+
+    function openQR() {
+        document.getElementById("qrModal").classList.add("active");
+    }
+
+    function closeQR() {
+        document.getElementById("qrModal").classList.remove("active");
+    }
+
+    function closeQRBackground(event) {
+        if (event.target.id === "qrModal") {
+            closeQR();
+        }
+    }
+
+    async function shareSite() {
+
+        const shareData = {
+            title: "SOUB BOIS & HABITAT",
+            text: "Découvrez SOUB BOIS & HABITAT",
+            url: "https://soubbois.fr"
+        };
+
+        if (navigator.share) {
+
+            try {
+                await navigator.share(shareData);
+            } catch (error) {
+                /* L'utilisateur a simplement fermé le menu de partage */
+            }
+
+        } else {
+
+            try {
+                await navigator.clipboard.writeText(
+                    "https://soubbois.fr"
+                );
+
+                alert(
+                    "Le lien https://soubbois.fr a été copié."
+                );
+
+            } catch (error) {
+
+                window.prompt(
+                    "Copiez le lien :",
+                    "https://soubbois.fr"
+                );
+
+            }
+        }
+    }
+
+</script>
 
 </body>
 </html>
